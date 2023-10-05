@@ -1,63 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SalesX Technology</title>
     <style>
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-          "Segoe UI Symbol";
-        background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
-        height: 100vh;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 
-      .container {
-        background: rgba(255, 255, 255, 0.9);
-        padding: 40px 60px;
-        border-radius: 15px;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-      }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px 60px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 50px;
+        }
 
-      h1 {
-        text-align: center;
-        color: #084f93;
-        margin-bottom: 20px;
-      }
+        h1 {
+            text-align: center;
+            color: #084F93;
+            margin-bottom: 20px;
+        }
 
-      p {
-        text-align: center;
-        color: #666;
-      }
+        p {
+            text-align: center;
+            color: #666;
+        }
 
-      a {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 10px 20px;
-        background-color: #084f93;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.2s;
-      }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #084F93;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
 
-      a:hover {
-        background-color: #063570;
-      }
+        a:hover {
+            background-color: #063570;
+        }
+
+        footer {
+            color: #084F93;
+            font-size: 14px;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      <h1>Welcome to SalesX Technology</h1>
-      <p>
-        Revolutionizing the Sales Experience. Stay tuned for exciting updates!
-      </p>
-      <a href="mailto:tech@salesx.co.th">Contact Us</a>
+        <h1>Welcome to SalesX Technology</h1>
+        <p>Revolutionizing the Sales Experience. Stay tuned for exciting updates!</p>
+        <a href="mailto:tech@salesx.co.th">Contact Us</a>
     </div>
-  </body>
+    <footer>
+        All rights reserved SalesX Technology Co., Ltd <span id="year"></span>
+    </footer>
+
+    <script>
+        // Get the current year and set it in the footer
+        const currentYear = new Date().getFullYear();
+        document.getElementById('year').textContent = currentYear;
+    </script>
+</body>
 </html>
